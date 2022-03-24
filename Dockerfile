@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:bullseye
 
 MAINTAINER Ruslan Nagimov <nagimov@outlook.com>
 

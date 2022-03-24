@@ -12,7 +12,7 @@ $app['db.options'] = [
     	'dbname' => 'AGENDAV_DB_NAME',
         'user' => 'AGENDAV_DB_USER',
         'password' => 'AGENDAV_DB_PASSWORD',
-    	'host' => '127.0.0.1',
+    	'host' => 'AGENDAV_DB_HOST',
     	'driver' => 'pdo_mysql',
 ];
 // Encryption key

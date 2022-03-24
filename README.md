@@ -9,7 +9,15 @@ Docker image for [AgenDAV - CalDAV web client](https://github.com/agendav/agenda
 
 Since this image only carries a front-end for CalDAV, there's no provision for persistency. Running agendav statelessly has no drawbacks since agendav itself is not customizable.
 
-Standard `debian` base image is used. The build is not optimized for size or compilation time.
+Standard `debian bullseye` base image is used. The build is not optimized for size or compilation time.
+
+## Cajunjoel mods
+
+* Mysql is no longer built in.
+* PHP is upgraded to 7
+* Debian Bullseye, not Buster
+* Added DB Host environment variable
+
 
 ## Supported tags
 
@@ -27,3 +35,7 @@ Standard `debian` base image is used. The build is not optimized for size or com
 - `AGENDAV_TIMEZONE`
 - `AGENDAV_LANG`
 - `AGENDAV_LOG_DIR`
+- `AGENDAV_DB_NAME`
+- `AGENDAV_DB_USER`
+- `AGENDAV_DB_PASSWORD`
+- `AGENDAV_DB_HOST`
